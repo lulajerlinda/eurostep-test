@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bubble Tooltip</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+      
+      body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.progress-container {
+  position: relative;
+  width: 300px;
+  height: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+.tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.progress-container:hover .tooltip {
+  opacity: 1;
+}
+.orange{
+    color: orange;
+    background-color: orange;
+}
+.greenButton {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="progress-container">
+      <div class="progress-bar orange" style="width: 70%;"></div>
+      <div class="tooltip">70% Complete</div>
+<p class="col-md-6">Only 3 days left to fund this project</p>
+<p class="col-md-6">Join the <strong>42</strong> other donor who have already supported this project. Every dollar helps</p>
+ <div class="row">
+    <form class="col-md-12">
+      <div class="row">
+        <div class="input-field col-md-6">
+          <input id="dollar" class="materialize-textarea" value= "$50"></>
+        </div>
+        <button class="greenButton">Give now</button>
+      </div>
+    </form>
+  </div>
+  <a href="">Why give 50$</a>
+    </div>
+  </div>
+     <div class="container">
+      <button class="button">Save for later</button>
+      <button class="button">Tell your friends</button>
+     </div>
+</body>
+</html>
